@@ -3,7 +3,7 @@ package com.parking.parkinglot.entitites;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "car")
+@Table(name = "cars")
 public class Car {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -22,10 +22,10 @@ public class Car {
         this.id = id;
     }
 
-    @Column(name = "parking_spot")
+    @Column(name = "parkingSpot")
     private String parkingSpot;
 
-    @Column(name = "license_plate")
+    @Column(name = "licensePlate")
     private String licensePlate;
 
     public User getOwner() {
